@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>RegisterUser</servlet-name>
+        <servlet-class>com.nick.bpit.http.RegisterUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GCMNotification</servlet-name>
+        <servlet-class>com.nick.bpit.GCMNotification</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StartServer</servlet-name>
+        <servlet-class>com.nick.bpit.StartServer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterUser</servlet-name>
+        <url-pattern>/RegisterUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GCMNotification</servlet-name>
+        <url-pattern>/GCMNotification</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StartServer</servlet-name>
+        <url-pattern>/StartServer</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
